@@ -50,6 +50,8 @@
 				$this.css('padding', 0);
 
 				base.$originalHeader = $('thead:first', this);
+				base.$originalHeader.css('background-color', 'white');
+				
 				base.$clonedHeader = base.$originalHeader.clone();
 				$this.trigger('clonedHeader.' + name, [base.$clonedHeader]);
 
